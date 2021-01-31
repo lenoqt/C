@@ -1,0 +1,24 @@
+
+t@DESKTOP-1M0THU7:/mnt/d/Data Science Stuff/C ++/Book-1/Chapter3# g++ -std=c++2a -I BigNumber/src fig03_05.cpp \
+> BigNumber/src/bignumber.cpp -o fig03_05 && ./fig03_05
+long long value1: 9223372036854775807
+value1 - 1: 9223372036854775806
+value1 + 1: -9223372036854775808
+
+BigNumber value2: 9223372036854775807
+value2 - 1: 9223372036854775806
+value2 + 1: 9223372036854775808
+
+value3: 100000000
+value3 to the power 2: 10000000000000000
+value3 to the power 3: 2003764205206896640
+value3 to the power 4: -8814407033341083648
+value3 to the power 5: -5047021154770878464
+
+value4: 100000000
+value4.pow(2): 10000000000000000
+value4.pow(3): 1000000000000000000000000
+value4.pow(4): 100000000000000000000000000000000
+value4.pow(5): 10000000000000000000000000000000000000000
+
+root@DESKTOP-1M0THU7:/mnt/d/Data Science Stuff/C ++/Book-1/Chapter3#
