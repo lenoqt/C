@@ -1,0 +1,4 @@
+2021-03-20T12:05:07.656 WARN (pid:22444) [attach] - Plugin not ready when received "highlight" []
+2021-03-20T12:05:07.774 INFO (pid:22444) [services] - registered service "highlight"
+2021-03-20T12:05:08.000 INFO (pid:22444) [language-client-index] - highlight started with 22481
+2021-03-20T12:05:08.048 INFO (pid:22444) [plugin] - coc.nvim 0.0.80-0a565835ea initialized with node: v10.24.0 after 380ms
