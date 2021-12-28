@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/home/leno/Documents/Cpp_prac/Section8/Tutorial/build",
+  "command": "/usr/bin/c++  -I/home/leno/Documents/Cpp_prac/Section8/Tutorial/include -std=gnu++20 -o CMakeFiles/hello.dir/main.cpp.o -c /home/leno/Documents/Cpp_prac/Section8/Tutorial/main.cpp",
+  "file": "/home/leno/Documents/Cpp_prac/Section8/Tutorial/main.cpp"
+},
+{
+  "directory": "/home/leno/Documents/Cpp_prac/Section8/Tutorial/build",
+  "command": "/usr/bin/c++  -I/home/leno/Documents/Cpp_prac/Section8/Tutorial/include -std=gnu++20 -o CMakeFiles/hello.dir/src/Blah.cpp.o -c /home/leno/Documents/Cpp_prac/Section8/Tutorial/src/Blah.cpp",
+  "file": "/home/leno/Documents/Cpp_prac/Section8/Tutorial/src/Blah.cpp"
+}
+]

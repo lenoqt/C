@@ -1,0 +1,8 @@
+Libraries
+Preprocessor, compilation (.o), Link (.exe or no suffix)
+
+Static Libraries - Actually compiled into your program
+Dynamic libraries - Program finds code at runtime 
+
+Static: Windows (abc.lib) UNIX/Linux (ABClib.a)
+Dynamic: Windows (abc.dll) UNIX/Linux (libABC.so) macOS (ABC.dylib)
