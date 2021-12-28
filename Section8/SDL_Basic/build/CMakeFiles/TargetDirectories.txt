@@ -1,0 +1,3 @@
+/home/leno/Documents/Cpp_prac/Section8/SDL_Basic/build/CMakeFiles/SDL_Basic.dir
+/home/leno/Documents/Cpp_prac/Section8/SDL_Basic/build/CMakeFiles/edit_cache.dir
+/home/leno/Documents/Cpp_prac/Section8/SDL_Basic/build/CMakeFiles/rebuild_cache.dir

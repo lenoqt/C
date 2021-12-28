@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/SDL_Basic.dir/main.cpp.o CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o -o SDL_Basic  -L/usr/local/lib -Wl,-rpath,/usr/local/lib -Wl,--enable-new-dtags -lSDL2 
