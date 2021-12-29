@@ -81,12 +81,12 @@ clean: CMakeFiles/SDL_Basic.dir/clean
 CMakeFiles/SDL_Basic.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Basic.dir/build.make CMakeFiles/SDL_Basic.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Basic.dir/build.make CMakeFiles/SDL_Basic.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leno/Documents/Cpp_prac/Section8/SDL_Basic/build/CMakeFiles --progress-num=1,2,3 "Built target SDL_Basic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/leno/Documents/Cpp_prac/Section8/SDL_Basic/build/CMakeFiles --progress-num=1,2,3,4,5 "Built target SDL_Basic"
 .PHONY : CMakeFiles/SDL_Basic.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/SDL_Basic.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/leno/Documents/Cpp_prac/Section8/SDL_Basic/build/CMakeFiles 3
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/leno/Documents/Cpp_prac/Section8/SDL_Basic/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/SDL_Basic.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/leno/Documents/Cpp_prac/Section8/SDL_Basic/build/CMakeFiles 0
 .PHONY : CMakeFiles/SDL_Basic.dir/rule

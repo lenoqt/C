@@ -3,7 +3,10 @@
 
 CMakeFiles/SDL_Basic.dir/main.cpp.o: ../main.cpp \
   /usr/include/stdc-predef.h \
+  ../include/Particle.h \
   ../include/Screen.h \
+  /usr/local/include/SDL2/SDL.h \
+  /usr/local/include/SDL2/SDL_main.h \
   /usr/local/include/SDL2/SDL_stdinc.h \
   /usr/local/include/SDL2/SDL_config.h \
   /usr/local/include/SDL2/SDL_platform.h \
@@ -130,9 +133,6 @@ CMakeFiles/SDL_Basic.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/11.1.0/tr1/poly_laguerre.tcc \
   /usr/include/c++/11.1.0/tr1/riemann_zeta.tcc \
   /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/float.h \
-  /usr/local/include/SDL2/SDL.h \
-  /usr/local/include/SDL2/SDL_main.h \
-  /usr/local/include/SDL2/SDL_stdinc.h \
   /usr/local/include/SDL2/SDL_assert.h \
   /usr/local/include/SDL2/SDL_atomic.h \
   /usr/local/include/SDL2/SDL_audio.h \
@@ -258,6 +258,8 @@ CMakeFiles/SDL_Basic.dir/main.cpp.o: ../main.cpp \
   /usr/local/include/SDL2/SDL_version.h \
   /usr/local/include/SDL2/SDL_locale.h \
   /usr/local/include/SDL2/SDL_misc.h \
+  ../include/Swarm.h \
+  ../include/Particle.h \
   /usr/include/c++/11.1.0/iostream \
   /usr/include/c++/11.1.0/ostream \
   /usr/include/c++/11.1.0/ios \
@@ -356,9 +358,65 @@ CMakeFiles/SDL_Basic.dir/main.cpp.o: ../main.cpp \
   /usr/include/c++/11.1.0/istream \
   /usr/include/c++/11.1.0/bits/istream.tcc
 
+CMakeFiles/SDL_Basic.dir/src/Particle.cpp.o: ../src/Particle.cpp \
+  /usr/include/stdc-predef.h \
+  ../include/Particle.h \
+  /usr/include/c++/11.1.0/cstdlib \
+  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h \
+  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/os_defines.h \
+  /usr/include/features.h \
+  /usr/include/sys/cdefs.h \
+  /usr/include/bits/wordsize.h \
+  /usr/include/bits/long-double.h \
+  /usr/include/gnu/stubs.h \
+  /usr/include/gnu/stubs-64.h \
+  /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/cpu_defines.h \
+  /usr/include/c++/11.1.0/pstl/pstl_config.h \
+  /usr/include/stdlib.h \
+  /usr/include/bits/libc-header-start.h \
+  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h \
+  /usr/include/bits/waitflags.h \
+  /usr/include/bits/waitstatus.h \
+  /usr/include/bits/floatn.h \
+  /usr/include/bits/floatn-common.h \
+  /usr/include/bits/types/locale_t.h \
+  /usr/include/bits/types/__locale_t.h \
+  /usr/include/sys/types.h \
+  /usr/include/bits/types.h \
+  /usr/include/bits/timesize.h \
+  /usr/include/bits/typesizes.h \
+  /usr/include/bits/time64.h \
+  /usr/include/bits/types/clock_t.h \
+  /usr/include/bits/types/clockid_t.h \
+  /usr/include/bits/types/time_t.h \
+  /usr/include/bits/types/timer_t.h \
+  /usr/include/bits/stdint-intn.h \
+  /usr/include/endian.h \
+  /usr/include/bits/endian.h \
+  /usr/include/bits/endianness.h \
+  /usr/include/bits/byteswap.h \
+  /usr/include/bits/uintn-identity.h \
+  /usr/include/sys/select.h \
+  /usr/include/bits/select.h \
+  /usr/include/bits/types/sigset_t.h \
+  /usr/include/bits/types/__sigset_t.h \
+  /usr/include/bits/types/struct_timeval.h \
+  /usr/include/bits/types/struct_timespec.h \
+  /usr/include/bits/pthreadtypes.h \
+  /usr/include/bits/thread-shared-types.h \
+  /usr/include/bits/pthreadtypes-arch.h \
+  /usr/include/bits/struct_mutex.h \
+  /usr/include/bits/struct_rwlock.h \
+  /usr/include/alloca.h \
+  /usr/include/bits/stdlib-float.h \
+  /usr/include/c++/11.1.0/bits/std_abs.h \
+  /usr/include/c++/11.1.0/stdlib.h
+
 CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o: ../src/Screen.cpp \
   /usr/include/stdc-predef.h \
   ../include/Screen.h \
+  /usr/local/include/SDL2/SDL.h \
+  /usr/local/include/SDL2/SDL_main.h \
   /usr/local/include/SDL2/SDL_stdinc.h \
   /usr/local/include/SDL2/SDL_config.h \
   /usr/local/include/SDL2/SDL_platform.h \
@@ -485,9 +543,6 @@ CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o: ../src/Screen.cpp \
   /usr/include/c++/11.1.0/tr1/poly_laguerre.tcc \
   /usr/include/c++/11.1.0/tr1/riemann_zeta.tcc \
   /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/float.h \
-  /usr/local/include/SDL2/SDL.h \
-  /usr/local/include/SDL2/SDL_main.h \
-  /usr/local/include/SDL2/SDL_stdinc.h \
   /usr/local/include/SDL2/SDL_assert.h \
   /usr/local/include/SDL2/SDL_atomic.h \
   /usr/local/include/SDL2/SDL_audio.h \
@@ -614,8 +669,17 @@ CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o: ../src/Screen.cpp \
   /usr/local/include/SDL2/SDL_locale.h \
   /usr/local/include/SDL2/SDL_misc.h
 
+CMakeFiles/SDL_Basic.dir/src/Swarm.cpp.o: ../src/Swarm.cpp \
+  /usr/include/stdc-predef.h \
+  ../include/Swarm.h \
+  ../include/Particle.h
+
+
+../src/Swarm.cpp:
 
 ../src/Screen.cpp:
+
+../src/Particle.cpp:
 
 /usr/include/c++/11.1.0/bits/istream.tcc:
 
@@ -715,8 +779,6 @@ CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o: ../src/Screen.cpp \
 
 /usr/include/c++/11.1.0/exception:
 
-/usr/include/c++/11.1.0/bits/memoryfwd.h:
-
 /usr/include/c++/11.1.0/bits/stringfwd.h:
 
 /usr/include/c++/11.1.0/iosfwd:
@@ -725,13 +787,7 @@ CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o: ../src/Screen.cpp \
 
 /usr/include/c++/11.1.0/ostream:
 
-/usr/include/c++/11.1.0/tr1/poly_hermite.tcc:
-
-/usr/include/c++/11.1.0/tr1/modified_bessel_func.tcc:
-
-/usr/include/c++/11.1.0/bits/ptr_traits.h:
-
-/usr/include/bits/math-vector.h:
+../include/Swarm.h:
 
 /usr/include/c++/11.1.0/tr1/legendre_function.tcc:
 
@@ -749,13 +805,13 @@ CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o: ../src/Screen.cpp \
 
 /usr/include/c++/11.1.0/new:
 
+/usr/include/c++/11.1.0/bits/ptr_traits.h:
+
+/usr/include/bits/math-vector.h:
+
+/usr/include/c++/11.1.0/tr1/modified_bessel_func.tcc:
+
 /usr/include/c++/11.1.0/concepts:
-
-/usr/include/c++/11.1.0/tr1/special_function_util.h:
-
-/usr/local/include/SDL2/SDL_audio.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/amxbf16intrin.h:
 
 /usr/include/c++/11.1.0/tr1/ell_integral.tcc:
 
@@ -798,12 +854,6 @@ CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o: ../src/Screen.cpp \
 /usr/include/bits/libm-simd-decl-stubs.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/avx512vnniintrin.h:
-
-/usr/include/c++/11.1.0/bits/cxxabi_init_exception.h:
-
-/usr/include/bits/endian.h:
-
-/usr/include/c++/11.1.0/tr1/poly_laguerre.tcc:
 
 /usr/include/c++/11.1.0/tr1/exp_integral.tcc:
 
@@ -855,51 +905,13 @@ CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o: ../src/Screen.cpp \
 
 /usr/include/math.h:
 
-/usr/include/c++/11.1.0/bits/iterator_concepts.h:
+/usr/include/c++/11.1.0/istream:
 
-/usr/include/bits/types/time_t.h:
-
-/usr/include/bits/endianness.h:
-
-/usr/include/bits/sched.h:
-
-/usr/include/bits/types/__FILE.h:
-
-/usr/include/features.h:
-
-/usr/local/include/SDL2/SDL_platform.h:
-
-../main.cpp:
-
-/usr/include/bits/types/__sigset_t.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/avx512vlbwintrin.h:
-
-/usr/include/sys/types.h:
+/usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/os_defines.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stdint.h:
 
 /usr/local/include/SDL2/SDL_render.h:
-
-/usr/include/c++/11.1.0/ext/atomicity.h:
-
-/usr/include/bits/stdint-intn.h:
-
-/usr/include/bits/types/clockid_t.h:
-
-/usr/include/c++/11.1.0/bits/exception_defines.h:
-
-/usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++locale.h:
-
-/usr/include/string.h:
-
-/usr/include/bits/mathcalls-helper-functions.h:
-
-/usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/gthr-default.h:
-
-/usr/local/include/SDL2/SDL_power.h:
-
-/usr/include/bits/stdlib-float.h:
 
 /usr/include/c++/11.1.0/tr1/hypergeometric.tcc:
 
@@ -911,13 +923,13 @@ CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o: ../src/Screen.cpp \
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/cldemoteintrin.h:
 
-/usr/include/bits/timesize.h:
-
 /usr/include/bits/types/struct___jmp_buf_tag.h:
 
 /usr/include/bits/wchar.h:
 
 /usr/include/bits/waitstatus.h:
+
+/usr/include/bits/timesize.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/avx512ifmavlintrin.h:
 
@@ -941,6 +953,22 @@ CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o: ../src/Screen.cpp \
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/avx512vbmi2intrin.h:
 
+../main.cpp:
+
+/usr/include/c++/11.1.0/bits/iterator_concepts.h:
+
+/usr/include/bits/types/time_t.h:
+
+/usr/include/bits/endianness.h:
+
+/usr/include/bits/sched.h:
+
+/usr/include/bits/types/__FILE.h:
+
+/usr/include/features.h:
+
+/usr/local/include/SDL2/SDL_platform.h:
+
 /usr/include/bits/iscanonical.h:
 
 /usr/include/gnu/stubs.h:
@@ -955,7 +983,45 @@ CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o: ../src/Screen.cpp \
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/avxvnniintrin.h:
 
+/usr/include/c++/11.1.0/bits/exception_defines.h:
+
+/usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++locale.h:
+
+/usr/include/string.h:
+
+/usr/include/bits/mathcalls-helper-functions.h:
+
+/usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/gthr-default.h:
+
+/usr/local/include/SDL2/SDL_power.h:
+
+/usr/include/bits/stdlib-float.h:
+
+/usr/include/c++/11.1.0/tr1/special_function_util.h:
+
+/usr/local/include/SDL2/SDL_audio.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/amxbf16intrin.h:
+
+/usr/include/bits/types/struct_timeval.h:
+
+/usr/include/c++/11.1.0/ext/atomicity.h:
+
+/usr/include/bits/stdint-intn.h:
+
+/usr/include/bits/types/clockid_t.h:
+
+/usr/include/sys/types.h:
+
 /usr/include/bits/long-double.h:
+
+/usr/include/asm/errno.h:
+
+/usr/include/bits/stdint-uintn.h:
+
+/usr/include/bits/types/cookie_io_functions_t.h:
+
+/usr/local/include/SDL2/SDL_stdinc.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/clwbintrin.h:
 
@@ -985,17 +1051,23 @@ CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o: ../src/Screen.cpp \
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/tbmintrin.h:
 
-/usr/include/asm/errno.h:
+/usr/include/c++/11.1.0/bits/stl_tempbuf.h:
 
-/usr/include/bits/stdint-uintn.h:
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h:
 
-/usr/local/include/SDL2/SDL_stdinc.h:
+/usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h:
 
-/usr/include/bits/types/cookie_io_functions_t.h:
+/usr/include/bits/wordsize.h:
 
-/usr/include/c++/11.1.0/istream:
+/usr/include/stdio.h:
 
-/usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/os_defines.h:
+/usr/include/c++/11.1.0/bits/memoryfwd.h:
+
+../include/Particle.h:
+
+/usr/include/bits/types/__sigset_t.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/avx512vlbwintrin.h:
 
 /usr/include/c++/11.1.0/bits/algorithmfwd.h:
 
@@ -1037,21 +1109,9 @@ CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o: ../src/Screen.cpp \
 
 /usr/local/include/SDL2/SDL_scancode.h:
 
-/usr/include/bits/wordsize.h:
-
-/usr/include/stdio.h:
-
-/usr/include/c++/11.1.0/bits/stl_tempbuf.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/stddef.h:
-
-/usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/c++config.h:
-
 /usr/include/bits/byteswap.h:
 
 /usr/include/bits/libc-header-start.h:
-
-/usr/include/bits/types/struct_timeval.h:
 
 /usr/include/bits/floatn.h:
 
@@ -1074,6 +1134,14 @@ CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o: ../src/Screen.cpp \
 /usr/include/bits/struct_mutex.h:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/avx512vbmivlintrin.h:
+
+/usr/include/c++/11.1.0/tr1/poly_hermite.tcc:
+
+/usr/include/c++/11.1.0/bits/cxxabi_init_exception.h:
+
+/usr/include/bits/endian.h:
+
+/usr/include/c++/11.1.0/tr1/poly_laguerre.tcc:
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/float.h:
 
@@ -1251,6 +1319,16 @@ CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o: ../src/Screen.cpp \
 
 /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/avx512vp2intersectvlintrin.h:
 
+/usr/include/c++/11.1.0/bits/locale_classes.tcc:
+
+/usr/include/c++/11.1.0/iostream:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/bmi2intrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/amxtileintrin.h:
+
+/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/shaintrin.h:
+
 /usr/include/c++/11.1.0/bits/basic_string.h:
 
 /usr/include/c++/11.1.0/x86_64-pc-linux-gnu/bits/atomic_word.h:
@@ -1312,13 +1390,3 @@ CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o: ../src/Screen.cpp \
 /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/pkuintrin.h:
 
 /usr/local/include/SDL2/SDL_locale.h:
-
-/usr/include/c++/11.1.0/bits/locale_classes.tcc:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/amxtileintrin.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/bmi2intrin.h:
-
-/usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/shaintrin.h:
-
-/usr/include/c++/11.1.0/iostream:

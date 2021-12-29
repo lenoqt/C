@@ -6,7 +6,17 @@
 },
 {
   "directory": "/home/leno/Documents/Cpp_prac/Section8/SDL_Basic/build",
+  "command": "/usr/bin/c++  -I/usr/local/include/SDL2 -I/home/leno/Documents/Cpp_prac/Section8/SDL_Basic/include -std=gnu++20 -o CMakeFiles/SDL_Basic.dir/src/Particle.cpp.o -c /home/leno/Documents/Cpp_prac/Section8/SDL_Basic/src/Particle.cpp",
+  "file": "/home/leno/Documents/Cpp_prac/Section8/SDL_Basic/src/Particle.cpp"
+},
+{
+  "directory": "/home/leno/Documents/Cpp_prac/Section8/SDL_Basic/build",
   "command": "/usr/bin/c++  -I/usr/local/include/SDL2 -I/home/leno/Documents/Cpp_prac/Section8/SDL_Basic/include -std=gnu++20 -o CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o -c /home/leno/Documents/Cpp_prac/Section8/SDL_Basic/src/Screen.cpp",
   "file": "/home/leno/Documents/Cpp_prac/Section8/SDL_Basic/src/Screen.cpp"
+},
+{
+  "directory": "/home/leno/Documents/Cpp_prac/Section8/SDL_Basic/build",
+  "command": "/usr/bin/c++  -I/usr/local/include/SDL2 -I/home/leno/Documents/Cpp_prac/Section8/SDL_Basic/include -std=gnu++20 -o CMakeFiles/SDL_Basic.dir/src/Swarm.cpp.o -c /home/leno/Documents/Cpp_prac/Section8/SDL_Basic/src/Swarm.cpp",
+  "file": "/home/leno/Documents/Cpp_prac/Section8/SDL_Basic/src/Swarm.cpp"
 }
 ]

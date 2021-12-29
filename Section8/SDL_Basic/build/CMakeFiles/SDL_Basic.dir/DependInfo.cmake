@@ -9,7 +9,9 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/leno/Documents/Cpp_prac/Section8/SDL_Basic/main.cpp" "CMakeFiles/SDL_Basic.dir/main.cpp.o" "gcc" "CMakeFiles/SDL_Basic.dir/main.cpp.o.d"
+  "/home/leno/Documents/Cpp_prac/Section8/SDL_Basic/src/Particle.cpp" "CMakeFiles/SDL_Basic.dir/src/Particle.cpp.o" "gcc" "CMakeFiles/SDL_Basic.dir/src/Particle.cpp.o.d"
   "/home/leno/Documents/Cpp_prac/Section8/SDL_Basic/src/Screen.cpp" "CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o" "gcc" "CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o.d"
+  "/home/leno/Documents/Cpp_prac/Section8/SDL_Basic/src/Swarm.cpp" "CMakeFiles/SDL_Basic.dir/src/Swarm.cpp.o" "gcc" "CMakeFiles/SDL_Basic.dir/src/Swarm.cpp.o.d"
   )
 
 # Targets to which this target links.

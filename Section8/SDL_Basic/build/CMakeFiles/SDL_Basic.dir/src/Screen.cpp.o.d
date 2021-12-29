@@ -2,6 +2,7 @@ CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o: \
  /home/leno/Documents/Cpp_prac/Section8/SDL_Basic/src/Screen.cpp \
  /usr/include/stdc-predef.h \
  /home/leno/Documents/Cpp_prac/Section8/SDL_Basic/include/Screen.h \
+ /usr/local/include/SDL2/SDL.h /usr/local/include/SDL2/SDL_main.h \
  /usr/local/include/SDL2/SDL_stdinc.h \
  /usr/local/include/SDL2/SDL_config.h \
  /usr/local/include/SDL2/SDL_platform.h \
@@ -88,8 +89,6 @@ CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o: \
  /usr/include/c++/11.1.0/tr1/poly_laguerre.tcc \
  /usr/include/c++/11.1.0/tr1/riemann_zeta.tcc \
  /usr/lib/gcc/x86_64-pc-linux-gnu/11.1.0/include/float.h \
- /usr/local/include/SDL2/SDL.h /usr/local/include/SDL2/SDL_main.h \
- /usr/local/include/SDL2/SDL_stdinc.h \
  /usr/local/include/SDL2/SDL_assert.h \
  /usr/local/include/SDL2/SDL_atomic.h /usr/local/include/SDL2/SDL_audio.h \
  /usr/local/include/SDL2/SDL_error.h /usr/local/include/SDL2/SDL_endian.h \
@@ -202,5 +201,4 @@ CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o: \
  /usr/local/include/SDL2/SDL_render.h /usr/local/include/SDL2/SDL_shape.h \
  /usr/local/include/SDL2/SDL_system.h /usr/local/include/SDL2/SDL_timer.h \
  /usr/local/include/SDL2/SDL_version.h \
- /usr/local/include/SDL2/SDL_locale.h /usr/local/include/SDL2/SDL_misc.h \
- /usr/local/include/SDL2/SDL_render.h
+ /usr/local/include/SDL2/SDL_locale.h /usr/local/include/SDL2/SDL_misc.h

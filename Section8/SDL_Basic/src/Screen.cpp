@@ -5,17 +5,15 @@ namespace particle {
 Screen::Screen()
     : m_window(NULL), m_renderer(NULL), m_texture(NULL), m_buffer(NULL) {}
 
-Screen::~Screen() {}
-
 bool Screen::init() {
 
   if (SDL_Init(SDL_INIT_VIDEO) < 0) {
     return false;
   }
 
-  m_window =
-      SDL_CreateWindow("Particle Explosion", SDL_WINDOWPOS_UNDEFINED,
-                       SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH, SCREEN_HEIGHT, 0);
+  m_window = SDL_CreateWindow("Particle Explosion", SDL_WINDOWPOS_UNDEFINED,
+                              SDL_WINDOWPOS_UNDEFINED, SCREEN_WIDTH,
+                              SCREEN_HEIGHT, SDL_WINDOW_SHOWN);
 
   if (m_window == NULL) {
     // In the event that the  m_window could not be made..
@@ -47,12 +45,6 @@ bool Screen::init() {
 
   // flips all bytes to 1 i.e., white screen
   memset(m_buffer, 0, SCREEN_WIDTH * SCREEN_HEIGHT * sizeof(Uint32));
-
-  // for (int i{0}; i < SCREEN_WIDTH * SCREEN_HEIGHT; i++) {
-  //   m_buffer[i] = 0xFFFF0000; // each pair of bytes is a color from RGB and
-  //   last
-  //                             // FF is transparency
-  // }
 
   return true;
 }
@@ -87,6 +79,11 @@ void Screen::update() {
 }
 
 void Screen::setPixel(int x, int y, Uint8 red, Uint8 green, Uint8 blue) {
+
+  // not efficient for large number of particles
+  if (x < 0 || x >= SCREEN_WIDTH || y < 0 || y >= SCREEN_HEIGHT) {
+    return;
+  }
 
   Uint32 color{0};
 

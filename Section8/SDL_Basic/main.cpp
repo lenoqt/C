@@ -1,13 +1,24 @@
+#include "Particle.h"
 #include "Screen.h"
+#include "Swarm.h"
 #include <iostream>
+#include <math.h>
+#include <stdlib.h>
+#include <time.h>
+
+using namespace particle;
 
 int main(int argc, char *argv[]) {
 
-  particle::Screen screen;
+  srand(time(NULL));
+
+  Screen screen;
 
   if (screen.init() == false) {
-    std::cout << "Couldn't start" << std::endl;
+    std::cout << "Couldn't start SDL\n";
   }
+
+  Swarm swarm;
 
   while (true) {
 
@@ -15,18 +26,25 @@ int main(int argc, char *argv[]) {
 
     // Draw particles
 
-    for (int y{0}; y < particle::Screen::SCREEN_HEIGHT; y++) {
+    int elapsedTime = SDL_GetTicks();
+    unsigned char green = (unsigned char)((1 + sin(elapsedTime * 0.001)) * 128);
+    unsigned char red = (unsigned char)((1 + sin(elapsedTime * 0.002)) * 128);
+    unsigned char blue = (unsigned char)((1 + sin(elapsedTime * 0.003)) * 128);
 
-      for (int x{0}; x < particle::Screen::SCREEN_WIDTH; x++) {
+    const Particle *const pParticles = swarm.getParticles();
 
-        screen.setPixel(x, y, 128, 0, 255);
-      }
+    for (int i{0}; i < Swarm::NPARTICLES; i++) {
+
+      Particle particle{pParticles[i]};
+
+      int x = (particle.m_x + 1) * Screen::SCREEN_WIDTH / 2;
+      int y = (particle.m_y + 1) * Screen::SCREEN_HEIGHT / 2;
+      screen.setPixel(x, y, red, green, blue);
     }
 
-    screen.setPixel(400, 300, 255, 255, 255);
     // Draw screen
-
     screen.update();
+
     // Check for messages and events
     if (screen.processEvents() == false) {
       break;

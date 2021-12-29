@@ -83,10 +83,24 @@ CMakeFiles/SDL_Basic.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Basic.dir/main.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/leno/Documents/Cpp_prac/Section8/SDL_Basic/main.cpp -o CMakeFiles/SDL_Basic.dir/main.cpp.s
 
+CMakeFiles/SDL_Basic.dir/src/Particle.cpp.o: CMakeFiles/SDL_Basic.dir/flags.make
+CMakeFiles/SDL_Basic.dir/src/Particle.cpp.o: ../src/Particle.cpp
+CMakeFiles/SDL_Basic.dir/src/Particle.cpp.o: CMakeFiles/SDL_Basic.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leno/Documents/Cpp_prac/Section8/SDL_Basic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SDL_Basic.dir/src/Particle.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Basic.dir/src/Particle.cpp.o -MF CMakeFiles/SDL_Basic.dir/src/Particle.cpp.o.d -o CMakeFiles/SDL_Basic.dir/src/Particle.cpp.o -c /home/leno/Documents/Cpp_prac/Section8/SDL_Basic/src/Particle.cpp
+
+CMakeFiles/SDL_Basic.dir/src/Particle.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Basic.dir/src/Particle.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/leno/Documents/Cpp_prac/Section8/SDL_Basic/src/Particle.cpp > CMakeFiles/SDL_Basic.dir/src/Particle.cpp.i
+
+CMakeFiles/SDL_Basic.dir/src/Particle.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Basic.dir/src/Particle.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/leno/Documents/Cpp_prac/Section8/SDL_Basic/src/Particle.cpp -o CMakeFiles/SDL_Basic.dir/src/Particle.cpp.s
+
 CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o: CMakeFiles/SDL_Basic.dir/flags.make
 CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o: ../src/Screen.cpp
 CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o: CMakeFiles/SDL_Basic.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leno/Documents/Cpp_prac/Section8/SDL_Basic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leno/Documents/Cpp_prac/Section8/SDL_Basic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o -MF CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o.d -o CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o -c /home/leno/Documents/Cpp_prac/Section8/SDL_Basic/src/Screen.cpp
 
 CMakeFiles/SDL_Basic.dir/src/Screen.cpp.i: cmake_force
@@ -97,19 +111,37 @@ CMakeFiles/SDL_Basic.dir/src/Screen.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Basic.dir/src/Screen.cpp.s"
 	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/leno/Documents/Cpp_prac/Section8/SDL_Basic/src/Screen.cpp -o CMakeFiles/SDL_Basic.dir/src/Screen.cpp.s
 
+CMakeFiles/SDL_Basic.dir/src/Swarm.cpp.o: CMakeFiles/SDL_Basic.dir/flags.make
+CMakeFiles/SDL_Basic.dir/src/Swarm.cpp.o: ../src/Swarm.cpp
+CMakeFiles/SDL_Basic.dir/src/Swarm.cpp.o: CMakeFiles/SDL_Basic.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/leno/Documents/Cpp_prac/Section8/SDL_Basic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/SDL_Basic.dir/src/Swarm.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SDL_Basic.dir/src/Swarm.cpp.o -MF CMakeFiles/SDL_Basic.dir/src/Swarm.cpp.o.d -o CMakeFiles/SDL_Basic.dir/src/Swarm.cpp.o -c /home/leno/Documents/Cpp_prac/Section8/SDL_Basic/src/Swarm.cpp
+
+CMakeFiles/SDL_Basic.dir/src/Swarm.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SDL_Basic.dir/src/Swarm.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/leno/Documents/Cpp_prac/Section8/SDL_Basic/src/Swarm.cpp > CMakeFiles/SDL_Basic.dir/src/Swarm.cpp.i
+
+CMakeFiles/SDL_Basic.dir/src/Swarm.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SDL_Basic.dir/src/Swarm.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/leno/Documents/Cpp_prac/Section8/SDL_Basic/src/Swarm.cpp -o CMakeFiles/SDL_Basic.dir/src/Swarm.cpp.s
+
 # Object files for target SDL_Basic
 SDL_Basic_OBJECTS = \
 "CMakeFiles/SDL_Basic.dir/main.cpp.o" \
-"CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o"
+"CMakeFiles/SDL_Basic.dir/src/Particle.cpp.o" \
+"CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o" \
+"CMakeFiles/SDL_Basic.dir/src/Swarm.cpp.o"
 
 # External object files for target SDL_Basic
 SDL_Basic_EXTERNAL_OBJECTS =
 
 SDL_Basic: CMakeFiles/SDL_Basic.dir/main.cpp.o
+SDL_Basic: CMakeFiles/SDL_Basic.dir/src/Particle.cpp.o
 SDL_Basic: CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o
+SDL_Basic: CMakeFiles/SDL_Basic.dir/src/Swarm.cpp.o
 SDL_Basic: CMakeFiles/SDL_Basic.dir/build.make
 SDL_Basic: CMakeFiles/SDL_Basic.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/leno/Documents/Cpp_prac/Section8/SDL_Basic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable SDL_Basic"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/leno/Documents/Cpp_prac/Section8/SDL_Basic/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable SDL_Basic"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SDL_Basic.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

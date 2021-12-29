@@ -153,6 +153,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Basic.dir/build.make CMakeFiles/SDL_Basic.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+src/Particle.o: src/Particle.cpp.o
+.PHONY : src/Particle.o
+
+# target to build an object file
+src/Particle.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Basic.dir/build.make CMakeFiles/SDL_Basic.dir/src/Particle.cpp.o
+.PHONY : src/Particle.cpp.o
+
+src/Particle.i: src/Particle.cpp.i
+.PHONY : src/Particle.i
+
+# target to preprocess a source file
+src/Particle.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Basic.dir/build.make CMakeFiles/SDL_Basic.dir/src/Particle.cpp.i
+.PHONY : src/Particle.cpp.i
+
+src/Particle.s: src/Particle.cpp.s
+.PHONY : src/Particle.s
+
+# target to generate assembly for a file
+src/Particle.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Basic.dir/build.make CMakeFiles/SDL_Basic.dir/src/Particle.cpp.s
+.PHONY : src/Particle.cpp.s
+
 src/Screen.o: src/Screen.cpp.o
 .PHONY : src/Screen.o
 
@@ -177,6 +201,30 @@ src/Screen.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Basic.dir/build.make CMakeFiles/SDL_Basic.dir/src/Screen.cpp.s
 .PHONY : src/Screen.cpp.s
 
+src/Swarm.o: src/Swarm.cpp.o
+.PHONY : src/Swarm.o
+
+# target to build an object file
+src/Swarm.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Basic.dir/build.make CMakeFiles/SDL_Basic.dir/src/Swarm.cpp.o
+.PHONY : src/Swarm.cpp.o
+
+src/Swarm.i: src/Swarm.cpp.i
+.PHONY : src/Swarm.i
+
+# target to preprocess a source file
+src/Swarm.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Basic.dir/build.make CMakeFiles/SDL_Basic.dir/src/Swarm.cpp.i
+.PHONY : src/Swarm.cpp.i
+
+src/Swarm.s: src/Swarm.cpp.s
+.PHONY : src/Swarm.s
+
+# target to generate assembly for a file
+src/Swarm.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/SDL_Basic.dir/build.make CMakeFiles/SDL_Basic.dir/src/Swarm.cpp.s
+.PHONY : src/Swarm.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -189,9 +237,15 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... src/Particle.o"
+	@echo "... src/Particle.i"
+	@echo "... src/Particle.s"
 	@echo "... src/Screen.o"
 	@echo "... src/Screen.i"
 	@echo "... src/Screen.s"
+	@echo "... src/Swarm.o"
+	@echo "... src/Swarm.i"
+	@echo "... src/Swarm.s"
 .PHONY : help
 
 
