@@ -20,6 +20,9 @@ int main(int argc, char *argv[]) {
 
   Swarm swarm;
 
+  const int HALF_WIDTH = Screen::SCREEN_WIDTH / 2;
+  const int HALF_HEIGHT = Screen::SCREEN_HEIGHT / 2;
+
   while (true) {
 
     // Update particles
@@ -27,6 +30,8 @@ int main(int argc, char *argv[]) {
     // Draw particles
 
     int elapsedTime = SDL_GetTicks();
+    // screen.clear();
+    swarm.update(elapsedTime);
     unsigned char green = (unsigned char)((1 + sin(elapsedTime * 0.001)) * 128);
     unsigned char red = (unsigned char)((1 + sin(elapsedTime * 0.002)) * 128);
     unsigned char blue = (unsigned char)((1 + sin(elapsedTime * 0.003)) * 128);
@@ -37,11 +42,12 @@ int main(int argc, char *argv[]) {
 
       Particle particle{pParticles[i]};
 
-      int x = (particle.m_x + 1) * Screen::SCREEN_WIDTH / 2;
-      int y = (particle.m_y + 1) * Screen::SCREEN_HEIGHT / 2;
+      int x = (particle.m_x + 1) * HALF_WIDTH;
+      int y = particle.m_y * HALF_WIDTH + HALF_HEIGHT;
       screen.setPixel(x, y, red, green, blue);
     }
 
+    screen.boxBlur();
     // Draw screen
     screen.update();
 

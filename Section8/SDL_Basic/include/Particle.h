@@ -7,9 +7,18 @@ struct Particle {
   double m_x;
   double m_y;
 
+private:
+  double m_speed;
+  double angle;
+
 public:
   Particle();
-  virtual ~Particle(); 
+  virtual ~Particle();
+
+  void update(int interval);
+
+private:
+  void init();
 };
 
 } // namespace particle

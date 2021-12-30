@@ -1,9 +1,11 @@
 #include "Screen.h"
+#include "SDL_stdinc.h"
 
 namespace particle {
 
 Screen::Screen()
-    : m_window(NULL), m_renderer(NULL), m_texture(NULL), m_buffer(NULL) {}
+    : m_window(NULL), m_renderer(NULL), m_texture(NULL), m_buffer(NULL),
+      s_buffer(NULL) {}
 
 bool Screen::init() {
 
@@ -42,9 +44,11 @@ bool Screen::init() {
 
   // amount of memory for all pixels.
   m_buffer = new Uint32[SCREEN_WIDTH * SCREEN_HEIGHT];
+  s_buffer = new Uint32[SCREEN_WIDTH * SCREEN_HEIGHT];
 
   // flips all bytes to 1 i.e., white screen
   memset(m_buffer, 0, SCREEN_WIDTH * SCREEN_HEIGHT * sizeof(Uint32));
+  memset(s_buffer, 0, SCREEN_WIDTH * SCREEN_HEIGHT * sizeof(Uint32));
 
   return true;
 }
@@ -64,6 +68,7 @@ bool Screen::processEvents() {
 void Screen::close() {
 
   delete[] m_buffer;
+  delete[] s_buffer;
   SDL_DestroyRenderer(m_renderer);
   SDL_DestroyTexture(m_texture);
   SDL_DestroyWindow(m_window);
@@ -95,7 +100,63 @@ void Screen::setPixel(int x, int y, Uint8 red, Uint8 green, Uint8 blue) {
   color <<= 8;
   color += 0xFF;
 
+  // RGBA
+
   m_buffer[(y * SCREEN_WIDTH) + x] = color;
+}
+
+void Screen::clear() {
+
+  memset(m_buffer, 0, SCREEN_WIDTH * SCREEN_HEIGHT * sizeof(Uint32));
+  memset(s_buffer, 0, SCREEN_WIDTH * SCREEN_HEIGHT * sizeof(Uint32));
+}
+
+void Screen::boxBlur() {
+
+  Uint32 *temp = m_buffer;
+  m_buffer = s_buffer;
+  s_buffer = temp;
+
+  for (int y{0}; y < SCREEN_HEIGHT; y++) {
+    for (int x{0}; x < SCREEN_WIDTH; x++) {
+
+      /*
+       * 0 0 0
+       * 0 1 0
+       * 0 0 0
+       */
+
+      int redTotal = 0;
+      int greenTotal = 0;
+      int blueTotal = 0;
+      for (int row = -1; row <= 1; row++) {
+        for (int col = -1; col <= 1; col++) {
+          int currentX = x + col;
+          int currentY = y + row;
+
+          if (currentX >= 0 && currentX < SCREEN_WIDTH && currentY >= 0 &&
+              currentY < SCREEN_HEIGHT) {
+
+            Uint32 color = s_buffer[currentY * SCREEN_WIDTH + currentX];
+
+            Uint8 red = color >> 24;
+            Uint8 green = color >> 16;
+            Uint8 blue = color >> 8;
+
+            redTotal += red;
+            greenTotal += red;
+            blueTotal += red;
+          }
+        }
+      }
+
+      Uint8 red = redTotal / 9;
+      Uint8 green = redTotal / 9;
+      Uint8 blue = redTotal / 9;
+
+      setPixel(x, y, red, green, blue);
+    }
+  }
 }
 
 } // namespace particle

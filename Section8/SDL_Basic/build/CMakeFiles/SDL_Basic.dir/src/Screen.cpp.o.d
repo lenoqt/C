@@ -201,4 +201,5 @@ CMakeFiles/SDL_Basic.dir/src/Screen.cpp.o: \
  /usr/local/include/SDL2/SDL_render.h /usr/local/include/SDL2/SDL_shape.h \
  /usr/local/include/SDL2/SDL_system.h /usr/local/include/SDL2/SDL_timer.h \
  /usr/local/include/SDL2/SDL_version.h \
- /usr/local/include/SDL2/SDL_locale.h /usr/local/include/SDL2/SDL_misc.h
+ /usr/local/include/SDL2/SDL_locale.h /usr/local/include/SDL2/SDL_misc.h \
+ /usr/local/include/SDL2/SDL_stdinc.h
